@@ -18,7 +18,7 @@ go install fyne.io/tools/cmd/fyne@latest
 go install github.com/fyne-io/fyne-cross@latest
 
 sudo rm -rf /etc/greetd
-sudo ln -sfn greetd /etc/greetd
+sudo ln -sfn $HOME/dotfiles/greetd /etc/greetd
 
 rm -rf $HOME/.config/{sway,fuzzel,mako,git}
 ln -sfn $HOME/dotfiles/{sway,fuzzel,mako,git} $HOME/.config
