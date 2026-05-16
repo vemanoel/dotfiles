@@ -9,5 +9,4 @@ sudo zypper install --no-confirm telegram-desktop
 sudo zypper install --no-confirm iosevka-fonts
 sudo zypper install --no-confirm htop
 sudo zypper install --no-confirm make
-sudo zypper install --no-confirm curl
-sudo zypper install --no-confirm wget
+sudo zypper install --no-confirm wezterm
