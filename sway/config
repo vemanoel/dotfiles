@@ -15,7 +15,7 @@ set $red_fg #32302f
 
 exec mako
 
-output * bg ${HOME}/.config/sway/images/wallpaper.jpg fill
+output * bg ~/.config/sway/images/wallpaper.jpg fill
 
 seat "*" {
     hide_cursor 3000
