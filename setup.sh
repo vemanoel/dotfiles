@@ -17,4 +17,7 @@ sudo zypper install --no-confirm gcc android-tools libXcursor-devel libXrandr-de
 go install fyne.io/tools/cmd/fyne@latest
 go install github.com/fyne-io/fyne-cross@latest
 
+rm -rf $HOME/.config/{sway,fuzzel,mako,git}
+ln -sfn $HOME/dotfiles/{sway,fuzzel,mako,git} ${HOME}/.config
+
 sudo reboot
