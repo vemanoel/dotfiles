@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-cd $HOME/dotfiles
+#!/usr/bin/env sh
 
 sudo zypper install --no-confirm sway swaylock swayidle swaybg mako grim slurp fuzzel libnotify-tools
 
@@ -23,6 +21,6 @@ sudo rm -rf /etc/greetd
 sudo ln -sfn greetd /etc/greetd
 
 rm -rf $HOME/.config/{sway,fuzzel,mako,git}
-ln -sfn {sway,fuzzel,mako,git} $HOME/.config
+ln -sfn $HOME/dotfiles/{sway,fuzzel,mako,git} $HOME/.config
 
 sudo reboot
