@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-sudo zypper install --no-confirm firefox htop mpv imv bc telegram-desktop wezterm NetworkManager tar zip unzip fdupes
+sudo zypper install --no-confirm firefox htop mpv imv bc dragon-drop telegram-desktop wezterm NetworkManager tar zip unzip fdupes
 sudo zypper install --no-confirm git neovim make go gopls gh glab curl
 sudo zypper install --no-confirm iosevka-fonts
 
