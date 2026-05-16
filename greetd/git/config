@@ -1,0 +1,8 @@
+[init]
+  defaultBranch = master
+[core]
+  editor = nvim
+[commit]
+  verbose = true
+[credential]
+  helper = store
