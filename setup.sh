@@ -7,3 +7,7 @@ go install fyne.io/tools/cmd/fyne@latest
 go install github.com/fyne-io/fyne-cross@latest
 
 sudo zypper install --no-confirm sway swaybg mako grim slurp fuzzel libnotify-tools
+
+zypper install --no-confirm docker docker-compose docker-compose-switch
+sudo systemctl enable --now docker
+sudo usermod -G docker -a $USER
