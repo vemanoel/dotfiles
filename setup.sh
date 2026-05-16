@@ -23,4 +23,6 @@ sudo ln -sfn $HOME/dotfiles/greetd /etc/greetd
 rm -rf $HOME/.config/{sway,fuzzel,mako,git}
 ln -sfn $HOME/dotfiles/{sway,fuzzel,mako,git} $HOME/.config
 
+sudo systemctl enable greetd.service
+
 sudo reboot
