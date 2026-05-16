@@ -20,4 +20,6 @@ sudo ln -sfn $HOME/dotfiles/greetd /etc/greetd
 sudo systemctl set-default graphical.target
 sudo systemctl enable greetd.service
 
+find $HOME/dotfiles -type f -name "*.sh" -exec chmod +x {} +
+
 sudo reboot
