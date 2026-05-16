@@ -5,9 +5,9 @@ cd $HOME/dotfiles
 sudo zypper install --no-confirm sway swaylock swayidle swaybg mako grim slurp fuzzel libnotify-tools
 
 sudo zypper install --no-confirm greetd tuigreet
-sudo systemctl disable display-manager
-sudo systemctl stop display-manager
-sudo systemctl enable greetd
+# sudo systemctl disable display-manager
+# sudo systemctl stop display-manager
+# sudo systemctl enable greetd
 
 sudo zypper install --no-confirm firefox htop mpv imv bc dragon-drop telegram-desktop wezterm NetworkManager tar zip unzip fdupes
 sudo zypper install --no-confirm git neovim make go gopls gh glab curl
