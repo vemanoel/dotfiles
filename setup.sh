@@ -22,12 +22,16 @@ sudo zypper install --no-confirm sway swaylock swayidle swaybg # window manager
 sudo zypper install --no-confirm greetd tuigreet # session manager
 sudo zypper install --no-confirm neovim # code editor
 sudo zypper install --no-confirm wezterm # terminal
+sudo zypper install --no-confirm android-tools
 sudo zypper install --no-confirm git
 sudo zypper install --no-confirm NetworkManager
 sudo zypper install --no-confirm telegram-desktop
 
-sudo rm -rf $HOME/.config/{git,greetd,sway,fuzzel,mako}
-ln -sfn $HOME/dotfiles/{git,greetd,sway,fuzzel,mako} $HOME/.config
+sudo rm -rf /etc/{greetd}
+ln -sfn $HOME/dotfiles/{greetd} /etc
+
+rm -rf $HOME/.config/{git,sway,fuzzel,mako}
+ln -sfn $HOME/dotfiles/{git,sway,fuzzel,mako} $HOME/.config
 
 sudo systemctl set-default graphical.target
 sudo systemctl enable greetd.service
@@ -35,7 +39,7 @@ sudo systemctl enable greetd.service
 # fyne
 sudo zypper install --no-confirm docker
 sudo usermod -G docker -a $USER
-sudo zypper install --no-confirm gcc android-tools libXcursor-devel libXrandr-devel Mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm-devel libxkbcommon-devel
+sudo zypper install --no-confirm gcc libXcursor-devel libXrandr-devel Mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm-devel libxkbcommon-devel
 go install fyne.io/tools/cmd/fyne@latest
 go install github.com/fyne-io/fyne-cross@latest
 
