@@ -1,1 +1,150 @@
-{}
+{
+	"policies": {
+		"DownloadDirectory": "${home}/Downloads/firefox",
+		"PromptForDownloadLocation": false,
+		"SearchEngines": {
+			"Default": "Google"
+		},
+		"NewTabPage": false,
+		"Homepage": {
+			"Locked": true,
+			"URL": "chrome://browser/content/blanktab.html",
+			"StartPage": "none",
+			"Additional": []
+		},
+		"PictureInPicture": {
+			"Enabled": false,
+			"Locked": true
+		},
+		"HardwareAcceleration": true,
+		"DisableTelemetry": true,
+		"SanitizeOnShutdown": {
+			"SiteSettings": false,
+			"Cache": false,
+      "Sessions": false,
+			"Cookies": true,
+			"FormData": true,
+			"History": true,
+			"Locked": true
+		},
+		"Cookies": {
+			"Allow": [
+				"https://www.youtube.com",
+				"https://www.github.com",
+				"https://www.notebooklm.google",
+				"https://www.roadmap.sh",
+				"https://www.notion.so",
+				"https://www.reddit.com",
+				"https://mail.google.com"
+			]
+		},
+		"DisplayBookmarksToolbar": "newtab",
+		"ManagedBookmarks": [
+			{
+				"toplevel_name": "bookmarks"
+			},
+			{
+				"name": "GitHub",
+				"url": "https://www.github.com"
+			},
+			{
+				"name": "Pirataria Digital",
+				"url": "https://pirataria.link"
+			},
+			{
+				"name": "roadmap.sh",
+				"url": "https://www.roadmap.sh"
+			},
+			{
+				"name": "Reddit",
+				"url": "https://www.reddit.com"
+			},
+			{
+				"name": "Annas Archive",
+				"url": "https://www.annas-archive.gd"
+			},
+			{
+				"name": "Google",
+				"children": [
+					{
+						"name": "YouTube",
+						"url": "https://www.youtube.com"
+					},
+					{
+						"name": "Gmail",
+						"url": "https://mail.google.com"
+					},
+					{
+						"name": "NotebookLM",
+						"url": "https://www.notebooklm.google"
+					}
+				]
+			}
+		],
+		"PopupBlocking": {
+			"Allow": [],
+			"Default": false,
+			"Locked": true
+		},
+		"Permissions": {
+			"PersistentStorage": {
+				"Allow": [],
+				"Block": [],
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"Location": {
+				"Allow": [],
+				"Block": [],
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"Notifications": {
+				"Allow": [],
+				"Block": [],
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"ScreenShare": {
+				"Allow": [],
+				"Block": [],
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"Speaker": {
+				"Allow": [],
+				"Block": [],
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"Camera": {
+				"Allow": [],
+				"Block": [],
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"Microphone": {
+				"Allow": [],
+				"Block": [],
+				"BlockNewRequests": true,
+				"Locked": true
+			},
+			"Autoplay": {
+				"Allow": ["https://www.reddit.com"],
+				"Block": [],
+				"BlockNewRequests": true,
+				"Locked": true
+			}
+		},
+		"ExtensionSettings": {
+			"uBlock0@raymondhill.net": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
+				"installation_mode": "force_installed"
+			},
+			"sponsorBlocker@ajay.app": {
+				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi",
+				"installation_mode": "force_installed"
+			}
+		}
+	}
+}
