@@ -21,7 +21,7 @@
 		"SanitizeOnShutdown": {
 			"SiteSettings": false,
 			"Cache": false,
-      "Sessions": false,
+      		"Sessions": false,
 			"Cookies": true,
 			"FormData": true,
 			"History": true,
@@ -38,49 +38,7 @@
 				"https://mail.google.com"
 			]
 		},
-		"DisplayBookmarksToolbar": "newtab",
-		"ManagedBookmarks": [
-			{
-				"toplevel_name": "bookmarks"
-			},
-			{
-				"name": "GitHub",
-				"url": "https://www.github.com"
-			},
-			{
-				"name": "Pirataria Digital",
-				"url": "https://pirataria.link"
-			},
-			{
-				"name": "roadmap.sh",
-				"url": "https://www.roadmap.sh"
-			},
-			{
-				"name": "Reddit",
-				"url": "https://www.reddit.com"
-			},
-			{
-				"name": "Annas Archive",
-				"url": "https://www.annas-archive.gd"
-			},
-			{
-				"name": "Google",
-				"children": [
-					{
-						"name": "YouTube",
-						"url": "https://www.youtube.com"
-					},
-					{
-						"name": "Gmail",
-						"url": "https://mail.google.com"
-					},
-					{
-						"name": "NotebookLM",
-						"url": "https://www.notebooklm.google"
-					}
-				]
-			}
-		],
+		"DisplayBookmarksToolbar": "never",
 		"PopupBlocking": {
 			"Allow": [],
 			"Default": false,
