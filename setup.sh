@@ -27,8 +27,8 @@ sudo zypper install --no-confirm git
 sudo zypper install --no-confirm NetworkManager
 sudo zypper install --no-confirm telegram-desktop
 
-sudo rm -rf /etc/{greetd}
-ln -sfn $HOME/dotfiles/{greetd} /etc
+sudo rm -rf /etc/{firefox,greetd}
+ln -sfn $HOME/dotfiles/{firefox,greetd} /etc
 
 rm -rf $HOME/.config/{wezterm,nvim,git,sway,fuzzel,mako}
 ln -sfn $HOME/dotfiles/{wezterm,nvim,git,sway,fuzzel,mako} $HOME/.config
