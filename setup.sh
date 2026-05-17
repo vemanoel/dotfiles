@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+find $HOME/dotfiles -exec chmod +x {} +
+
 sudo zypper install --no-confirm wget # download files
 sudo zypper install --no-confirm curl # api testing
 sudo zypper install --no-confirm firefox # browser
@@ -13,33 +15,20 @@ sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manage
 sudo zypper install --no-confirm go gopls # go toolchain
 sudo zypper install --no-confirm gh # github cli
 sudo zypper install --no-confirm glab # gitlab cli
+sudo zypper install --no-confirm grim slurp # take screenshots
+sudo zypper install --no-confirm fuzzel # applications runner
+sudo zypper install --no-confirm mako libnotify-tools # manage notifications
+sudo zypper install --no-confirm sway swaylock swayidle swaybg # window manager
+sudo zypper install --no-confirm greetd tuigreet # session manager
+sudo zypper install --no-confirm neovim # code editor
+sudo zypper install --no-confirm wezterm # terminal
+sudo zypper install --no-confirm git
 sudo zypper install --no-confirm NetworkManager
 sudo zypper install --no-confirm telegram-desktop
 
-# git
-sudo zypper install --no-confirm git
-rm -rf $HOME/.config/git
-ln -sfn $HOME/dotfiles/git $HOME/.config/git
+sudo rm -rf $HOME/.config/{git,greetd,sway,fuzzel,mako}
+ln -sfn $HOME/dotfiles/{git,greetd,sway,fuzzel,mako} $HOME/.config
 
-# code editor
-sudo zypper install --no-confirm neovim
-
-# terminal
-sudo zypper install --no-confirm wezterm
-
-# window manager
-sudo zypper install --no-confirm sway swaylock swayidle swaybg
-sudo zypper install --no-confirm grim slurp # take screenshots
-sudo zypper install --no-confirm mako libnotify-tools # notifications manager
-sudo zypper install --no-confirm fuzzel # applications runner
-rm -rf $HOME/.config/{sway,fuzzel,mako}
-ln -sfn $HOME/dotfiles/{sway,fuzzel,mako} $HOME/.config
-find $HOME/dotfiles/sway/scripts -exec chmod +x {} +
-
-# session manager
-sudo zypper install --no-confirm greetd tuigreet
-sudo rm -rf /etc/greetd
-sudo ln -sfn $HOME/dotfiles/greetd /etc/greetd
 sudo systemctl set-default graphical.target
 sudo systemctl enable greetd.service
 
