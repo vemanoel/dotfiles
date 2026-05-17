@@ -11,7 +11,6 @@ sudo zypper install --no-confirm mpv # video player
 sudo zypper install --no-confirm imv # image viewer
 sudo zypper install --no-confirm bc # calculator
 sudo zypper install --no-confirm make just # task runners
-sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm go gopls # go toolchain
 sudo zypper install --no-confirm gh # github cli
 sudo zypper install --no-confirm glab # gitlab cli
@@ -22,6 +21,7 @@ sudo zypper install --no-confirm sway swaylock swayidle swaybg # window manager
 sudo zypper install --no-confirm greetd tuigreet # session manager
 sudo zypper install --no-confirm neovim # code editor
 sudo zypper install --no-confirm wezterm # terminal
+sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm android-tools
 sudo zypper install --no-confirm git
 sudo zypper install --no-confirm NetworkManager
