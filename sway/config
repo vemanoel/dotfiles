@@ -18,7 +18,7 @@ exec mako
 output * bg ~/.config/sway/images/wallpaper.jpg fill
 
 seat "*" {
-    hide_cursor 3000
+    hide_cursor 3200
     hide_cursor when-typing enable
 }
 
