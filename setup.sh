@@ -17,7 +17,7 @@ sudo zypper install --no-confirm glab # gitlab cli
 sudo zypper install --no-confirm grim slurp # take screenshots
 sudo zypper install --no-confirm ddcutil # monitor manager
 sudo zypper install --no-confirm fuzzel # applications runner
-sudo zypper install --no-confirm mako libnotify-tools # manage notifications
+sudo zypper install --no-confirm mako libnotify-tools # notifications manager
 sudo zypper install --no-confirm sway swaylock swayidle swaybg # window manager
 sudo zypper install --no-confirm greetd tuigreet # session manager
 sudo zypper install --no-confirm neovim # code editor
