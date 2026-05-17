@@ -30,8 +30,8 @@ sudo zypper install --no-confirm telegram-desktop
 sudo rm -rf /etc/{firefox,greetd}
 sudo ln -sfn $HOME/dotfiles/{firefox,greetd} /etc
 
-rm -rf $HOME/.config/{wezterm,nvim,git,sway,fuzzel,mako}
-ln -sfn $HOME/dotfiles/{wezterm,nvim,git,sway,fuzzel,mako} $HOME/.config
+rm -rf $HOME/.config/{alacritty,nvim,git,sway,fuzzel,mako}
+ln -sfn $HOME/dotfiles/{alacritty,nvim,git,sway,fuzzel,mako} $HOME/.config
 
 sudo systemctl set-default graphical.target
 sudo systemctl enable greetd.service
