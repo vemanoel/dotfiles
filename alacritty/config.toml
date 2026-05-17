@@ -1,6 +1,9 @@
 [mouse]
 hide_when_typing = true
 
+[cursor]
+style = { "Beam", "Never" }
+
 [font]
 size = 13.0
 normal = { family = "Iosevka Extended Light" }
