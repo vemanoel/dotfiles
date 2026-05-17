@@ -22,77 +22,16 @@
 			"SiteSettings": false,
 			"Cache": false,
       		"Sessions": false,
-			"Cookies": true,
-			"FormData": true,
+			"Cookies": false,
+			"FormData": false,
 			"History": true,
 			"Locked": true
-		},
-		"Cookies": {
-			"Allow": [
-				"https://www.youtube.com",
-				"https://www.github.com",
-				"https://www.notebooklm.google",
-				"https://www.roadmap.sh",
-				"https://www.notion.so",
-				"https://www.reddit.com",
-				"https://mail.google.com"
-			]
 		},
 		"DisplayBookmarksToolbar": "never",
 		"PopupBlocking": {
 			"Allow": [],
 			"Default": false,
 			"Locked": true
-		},
-		"Permissions": {
-			"PersistentStorage": {
-				"Allow": [],
-				"Block": [],
-				"BlockNewRequests": true,
-				"Locked": true
-			},
-			"Location": {
-				"Allow": [],
-				"Block": [],
-				"BlockNewRequests": true,
-				"Locked": true
-			},
-			"Notifications": {
-				"Allow": [],
-				"Block": [],
-				"BlockNewRequests": true,
-				"Locked": true
-			},
-			"ScreenShare": {
-				"Allow": [],
-				"Block": [],
-				"BlockNewRequests": true,
-				"Locked": true
-			},
-			"Speaker": {
-				"Allow": [],
-				"Block": [],
-				"BlockNewRequests": true,
-				"Locked": true
-			},
-			"Camera": {
-				"Allow": [],
-				"Block": [],
-				"BlockNewRequests": true,
-				"Locked": true
-			},
-			"Microphone": {
-				"Allow": [],
-				"Block": [],
-				"BlockNewRequests": true,
-				"Locked": true
-			},
-			"Autoplay": {
-				"Allow": ["https://www.reddit.com"],
-				"Block": [],
-				"BlockNewRequests": true,
-				"Locked": true
-			}
 		},
 		"ExtensionSettings": {
 			"uBlock0@raymondhill.net": {
