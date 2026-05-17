@@ -1,6 +1,7 @@
 font=Iosevka Extended 10
 background-color=#282828
 text-color=#ddc7a1
+anchor=bottom-left
 border-color=#a9b665
 border-size=1
 border-radius=0
