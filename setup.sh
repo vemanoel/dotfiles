@@ -40,7 +40,6 @@ sudo systemctl enable greetd.service
 sudo zypper install --no-confirm docker
 sudo usermod -G docker -a $USER
 sudo zypper install --no-confirm gcc libXcursor-devel libXrandr-devel Mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm-devel libxkbcommon-devel
-go install fyne.io/tools/cmd/fyne@latest
 go install github.com/fyne-io/fyne-cross@latest
 
 # apply changes
