@@ -1,6 +1,6 @@
 set $mod Mod4
 set $menu fuzzel
-set $term wezterm
+set $term alacritty
 set $left h
 set $down j
 set $up k
