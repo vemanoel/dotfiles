@@ -2,10 +2,10 @@
 
 find $HOME/dotfiles -exec chmod +x {} +
 
+sudo zypper install --no-confirm iosevka-fonts # default font
 sudo zypper install --no-recommends --no-confirm wget # download files
 sudo zypper install --no-recommends --no-confirm curl # api testing
 sudo zypper install --no-recommends --no-confirm firefox # browser
-sudo zypper install --no-recommends --no-confirm iosevka-fonts # default font
 sudo zypper install --no-recommends --no-confirm htop # process manager
 sudo zypper install --no-recommends --no-confirm mpv # video player
 sudo zypper install --no-recommends --no-confirm imv # image viewer
@@ -19,7 +19,7 @@ sudo zypper install --no-recommends --no-confirm ddcutil # monitor manager
 sudo zypper install --no-recommends --no-confirm wireplumber # volume manager
 sudo zypper install --no-recommends --no-confirm fuzzel # applications runner
 sudo zypper install --no-recommends --no-confirm mako libnotify-tools # notifications manager
-sudo zypper install --no-confirm sway swaylock swayidle swaybg # window manager
+sudo zypper install --no-recommends --no-confirm sway swaybar swaybg # window manager
 sudo zypper install --no-recommends --no-confirm greetd tuigreet # session manager
 sudo zypper install --no-recommends --no-confirm neovim # code editor
 sudo zypper install --no-recommends --no-confirm alacritty # terminal
