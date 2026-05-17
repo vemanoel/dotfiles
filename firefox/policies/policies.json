@@ -103,6 +103,28 @@
 				"install_url": "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi",
 				"installation_mode": "force_installed"
 			}
-		}
+		},
+		"Preferences": {
+	      "ui.systemUsesDarkTheme": {
+	        "Value": 1,
+	        "Status": "default"
+	        "Type": "number"
+	      },
+	      "ui.systemUsesDarkTheme": {
+	        "Value": 1,
+	        "Status": "default"
+	        "Type": "number"
+	      },
+	      "browser.theme.content-theme": {
+	        "Value": 0,
+	        "Status": "default"
+	        "Type": "number"
+	      },
+	      "browser.theme.toolbar-theme": {
+	        "Value": 0,
+	        "Status": "default"
+	        "Type": "number"
+	      }
+	    }
 	}
 }
