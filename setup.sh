@@ -20,7 +20,7 @@ sudo zypper install --no-confirm mako libnotify-tools # manage notifications
 sudo zypper install --no-confirm sway swaylock swayidle swaybg # window manager
 sudo zypper install --no-confirm greetd tuigreet # session manager
 sudo zypper install --no-confirm neovim # code editor
-sudo zypper install --no-confirm wezterm # terminal
+sudo zypper install --no-confirm alacritty # terminal
 sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm android-tools
 sudo zypper install --no-confirm git
