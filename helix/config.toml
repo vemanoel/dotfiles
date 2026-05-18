@@ -1,7 +1,8 @@
 [editor]
 mouse = false
 scrolloff = 8
-middle-click-paste false
+auto-pairs = false
+middle-click-paste = false
 scroll-lines = 5
 shell = ["sh", "-c"]
 line-number = "absolute"
@@ -33,7 +34,7 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 diagnostics = ["hint", "warning", "error"]
-workspace-diagnostics = ["hint". "warning", "error"]
+workspace-diagnostics = ["hint", "warning", "error"]
 
 [editor.lsp]
 auto-signature-help = false
@@ -45,3 +46,6 @@ select = "block"
 
 [editor.file-picker]
 hidden = false
+
+[editor.search]
+wrap-around = false
