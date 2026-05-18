@@ -27,6 +27,8 @@ sudo zypper install --no-confirm sway swaybar swaynag swaybg xwayland # window m
 sudo zypper install --no-confirm greetd tuigreet # session manager
 sudo zypper install --no-confirm alacritty # terminal
 sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
+sudo zypper install --no-confirm helix # code editor
+
 curl -f https://zed.dev/install.sh | sh # code editor
 
 sudo rm -rf /etc/{firefox,greetd}
