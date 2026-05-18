@@ -2,6 +2,10 @@
 
 find $HOME/dotfiles -exec chmod +x {} +
 
+sudo zypper install --no-confirm android-tools
+sudo zypper install --no-confirm git
+sudo zypper install --no-confirm NetworkManager
+sudo zypper install --no-confirm telegram-desktop
 sudo zypper install --no-confirm iosevka-fonts # fonts
 sudo zypper install --no-confirm wget # download files
 sudo zypper install --no-confirm curl # api testing
@@ -19,16 +23,11 @@ sudo zypper install --no-confirm ddcutil # monitor manager
 sudo zypper install --no-confirm wireplumber # volume manager
 sudo zypper install --no-confirm fuzzel # applications runner
 sudo zypper install --no-confirm mako libnotify-tools # notifications manager
-sudo zypper install --no-confirm sway swaybar swaynag swaybg # window manager
+sudo zypper install --no-confirm sway swaybar swaynag swaybg xwayland # window manager
 sudo zypper install --no-confirm greetd tuigreet # session manager
-sudo zypper install --no-confirm neovim # code editor
 sudo zypper install --no-confirm alacritty # terminal
 sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
-sudo zypper install --no-confirm android-tools
-sudo zypper install --no-confirm git
-sudo zypper install --no-confirm xwayland
-sudo zypper install --no-confirm NetworkManager
-sudo zypper install --no-confirm telegram-desktop
+curl -f https://zed.dev/install.sh | sh # code editor
 
 sudo rm -rf /etc/{firefox,greetd}
 sudo ln -sfn $HOME/dotfiles/{firefox,greetd} /etc
