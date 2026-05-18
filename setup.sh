@@ -2,7 +2,7 @@
 
 find $HOME/dotfiles -exec chmod +x {} +
 
-sudo zypper install iosevka-fonts # default font
+sudo zypper install --no-confirm iosevka-fonts # fonts
 sudo zypper install --no-confirm wget # download files
 sudo zypper install --no-confirm curl # api testing
 sudo zypper install --no-confirm firefox # browser
