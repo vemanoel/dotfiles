@@ -1,0 +1,47 @@
+[editor]
+mouse = false
+scrolloff = 8
+middle-click-paste false
+scroll-lines = 5
+shell = ["sh", "-c"]
+line-number = "absolute"
+cursorline = true
+continue-comments = false
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+auto-completion = true
+auto-format = true
+idle-timeout = 0
+completion-timeout = 0
+preview-completion-insert = false
+completion-trigger-len = 2
+completion-replace = false
+auto-info = false
+undercurl = true
+color-modes = true
+text-width = 120
+insert-final-newline = false
+trim-final-newlines = false
+popup-border = "none"
+editor-config = false
+
+[editor.statusline]
+left = ["version-control", "file-name", "read-only-indicator", "file-modification-indicator", "diagnostics"]
+center = ["workspace-diagnostics"]
+right = ["mode", "spinner"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+diagnostics = ["hint", "warning", "error"]
+workspace-diagnostics = ["hint". "warning", "error"]
+
+[editor.lsp]
+auto-signature-help = false
+
+[editor.cursor-shape]
+normal = "block"
+insert = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false
