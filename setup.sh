@@ -19,7 +19,7 @@ sudo zypper install --no-confirm ddcutil # monitor manager
 sudo zypper install --no-confirm wireplumber # volume manager
 sudo zypper install --no-confirm fuzzel # applications runner
 sudo zypper install --no-confirm mako libnotify-tools # notifications manager
-sudo zypper install --no-confirm sway swaybar swaynag swaybg pango cairo # window manager
+sudo zypper install --no-confirm sway swaybar swaynag swaybg # window manager
 sudo zypper install --no-confirm greetd tuigreet # session manager
 sudo zypper install --no-confirm neovim # code editor
 sudo zypper install --no-confirm alacritty # terminal
