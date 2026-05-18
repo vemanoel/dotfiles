@@ -29,13 +29,11 @@ sudo zypper install --no-confirm alacritty # terminal
 sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm helix # code editor
 
-curl -f https://zed.dev/install.sh | sh # code editor
-
 sudo rm -rf /etc/{firefox,greetd}
 sudo ln -sfn $HOME/dotfiles/{firefox,greetd} /etc
 
-rm -rf $HOME/.config/{alacritty,nvim,git,sway,fuzzel,mako}
-ln -sfn $HOME/dotfiles/{alacritty,nvim,git,sway,fuzzel,mako} $HOME/.config
+rm -rf $HOME/.config/{alacritty,helix,git,sway,fuzzel,mako}
+ln -sfn $HOME/dotfiles/{alacritty,helix,git,sway,fuzzel,mako} $HOME/.config
 
 sudo systemctl set-default graphical.target
 sudo systemctl enable greetd.service
