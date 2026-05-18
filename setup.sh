@@ -25,7 +25,6 @@ sudo zypper install --no-confirm neovim # code editor
 sudo zypper install --no-confirm alacritty # terminal
 sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm android-tools
-sudo zypper install --no-confirm anki
 sudo zypper install --no-confirm git
 sudo zypper install --no-confirm xwayland
 sudo zypper install --no-confirm NetworkManager
