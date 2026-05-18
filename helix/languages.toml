@@ -2,7 +2,7 @@
 command = "gopls"
 
 [language-server.gopls.config]
-"diagnosticsDelay" = "1s"
+diagnosticsDelay = "1s"
 hoverKind = "SingleLine"
 diagnosticsTrigger = "Edit"
 staticcheck = true
@@ -24,17 +24,21 @@ ST1000 = false
 
 [[language]]
 name = "go"
+auto-format = true
 language-servers = ["gopls"]
 roots = ["go.work", "go.mod"]
 
 [[language]]
 name = "gomod"
+auto-format = true
 language-servers = ["gopls"]
 
 [[language]]
 name = "gowork"
+auto-format = true
 language-servers = ["gopls"]
 
 [[language]]
 name = "gotmpl"
+auto-format = true
 language-servers = ["gopls"]
