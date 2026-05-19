@@ -49,3 +49,7 @@ hidden = false
 
 [editor.search]
 wrap-around = false
+
+[editor.inline-diagnostics]
+other-lines = "disable"
+cursor-line = "hint"
