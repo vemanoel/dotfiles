@@ -1,3 +1,5 @@
+theme = "gruvbox-material"
+
 [editor]
 mouse = false
 scrolloff = 8
