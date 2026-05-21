@@ -1,0 +1,23 @@
+shopt -s histappend
+
+HISTCONTROL=ignoreboth
+HISTSIZE=10000
+HISTFILESIZE=20000
+
+alias fdupes='fdupes . -dNqnr'
+alias date='LC_TIME=C date "+%a, %d/%m/%y, %I:%M %p"'
+alias du='du -ah -d 1'
+alias df='df -h'
+alias bc='bc -ql'
+alias ls='ls -ahF1 --color=auto --group-directories-first'
+alias sudo='sudo '
+
+vid(){ /usr/bin/mpv "$@" & disown; }
+img(){ /usr/bin/imv-wayland "$@" & disown; }
+
+export PATH=/usr/local/go/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+
+export MOZ_ENABLE_WAYLAND=1
+export GDK_BACKEND=wayland
