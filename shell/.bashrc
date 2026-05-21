@@ -17,6 +17,3 @@ imv(){ /usr/bin/imv-wayland "$@" & disown; }
 
 export PATH=/usr/local/go/bin:$PATH
 export PATH=$HOME/go/bin:$PATH
-
-export MOZ_ENABLE_WAYLAND=1
-export GDK_BACKEND=wayland
