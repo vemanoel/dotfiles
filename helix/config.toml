@@ -22,8 +22,6 @@ auto-info = false
 undercurl = true
 color-modes = true
 text-width = 120
-insert-final-newline = false
-trim-final-newlines = false
 popup-border = "none"
 editor-config = false
 
