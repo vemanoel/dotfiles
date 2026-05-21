@@ -55,3 +55,6 @@ wrap-around = false
 [editor.inline-diagnostics]
 other-lines = "disable"
 cursor-line = "hint"
+
+[editor.smart-tab]
+enable = false
