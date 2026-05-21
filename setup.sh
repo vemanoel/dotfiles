@@ -35,8 +35,9 @@ sudo ln -sfn $HOME/dotfiles/{firefox,greetd} /etc
 rm -rf $HOME/.config/{alacritty,helix,git,sway,fuzzel,mako}
 ln -sfn $HOME/dotfiles/{alacritty,helix,git,sway,fuzzel,mako} $HOME/.config
 
+ln -sfn $HOME/dotfiles/shell/* $HOME
+
 sudo systemctl set-default graphical.target
 sudo systemctl enable greetd.service
 
-# apply changes
 sudo reboot
