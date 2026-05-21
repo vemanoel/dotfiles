@@ -38,11 +38,5 @@ ln -sfn $HOME/dotfiles/{alacritty,helix,git,sway,fuzzel,mako} $HOME/.config
 sudo systemctl set-default graphical.target
 sudo systemctl enable greetd.service
 
-# fyne
-sudo zypper install --no-confirm docker
-sudo usermod -G docker -a $USER
-sudo zypper install --no-confirm gcc libXcursor-devel libXrandr-devel Mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm-devel libxkbcommon-devel
-go install github.com/fyne-io/fyne-cross@latest
-
 # apply changes
 sudo reboot
