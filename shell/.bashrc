@@ -1,5 +1,6 @@
-shopt -s histappend
+test -s ~/.alias && . ~/.alias || true
 
+shopt -s histappend
 HISTCONTROL=ignoreboth
 HISTSIZE=10000
 HISTFILESIZE=20000
