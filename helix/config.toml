@@ -1,4 +1,4 @@
-theme = "gruvbox-material"
+theme = "fleet_dark"
 
 [editor]
 mouse = false
