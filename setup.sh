@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-find $HOME/dotfiles -exec chmod +x {} +
+sudo zypper refresh
+sudo zypper up
 
 sudo zypper install --no-confirm android-tools
 sudo zypper install --no-confirm git
@@ -28,6 +29,8 @@ sudo zypper install --no-confirm greetd tuigreet # session manager
 sudo zypper install --no-confirm alacritty # terminal
 sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm helix # code editor
+
+find $HOME/dotfiles -exec chmod +x {} +
 
 sudo rm -rf /etc/{firefox,greetd}
 sudo ln -sfn $HOME/dotfiles/{firefox,greetd} /etc
