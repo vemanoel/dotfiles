@@ -9,5 +9,5 @@ style = { shape = "Beam", blinking = "Never" }
 size = 12.0
 normal = { family = "Iosevka", style = "Extended" }
 bold = { family = "Iosevka", style = "Bold Extended" }
-italic = { family = "Iosevka", style = "Extended Italic" }
-bold_italic = { family = "Iosevka", style = "Bold Extended Italic" }
+italic = { family = "Iosevka", style = "Extended" } # Extended Italic
+bold_italic = { family = "Iosevka", style = "Bold Extended" } # Bold Extended Italic
