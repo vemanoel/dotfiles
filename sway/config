@@ -17,6 +17,7 @@ exec mako
 
 xwayland enable
 
+output * adaptive_sync off
 output * bg ~/.config/sway/images/wallpaper.jpg fill
 
 seat "*" {
