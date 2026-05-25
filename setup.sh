@@ -72,7 +72,9 @@ ln -sfn $HOME/dotfiles/shell/.* $HOME
 sudo systemctl set-default graphical.target
 sudo systemctl enable greetd.service
 
+sudo zypper purge-kernels
 sudo zypper clean --all
-sudo journalctl --vacuum-time=1d
+sudo journalctl --rotate
+sudo journalctl --vacuum-time=1s
 
 sudo reboot
