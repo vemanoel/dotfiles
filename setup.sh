@@ -31,7 +31,7 @@ sudo zypper install --no-confirm alacritty # terminal
 sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm helix # code editor
 
-sudo zypper install --no-confirm xdg-utils
+sudo zypper install --no-confirm libgthread-2_0-0 libxcb-xinerama0 libglib-2_0-0 libxcb-cursor0 mozilla-nss libxcb-icccm4 libxcb-keysyms1 xdg-utils
 [ -x /usr/local/bin/uninstall-anki ] && sudo /usr/local/bin/uninstall-anki
 ANKI_SETUP=$(mktemp -d); cd $ANKI_SETUP; trap 'rm -rf $ANKI_SETUP' EXIT
 curl -fsSLo releases.json 'https://api.github.com/repos/ankitects/anki/releases?per_page=100'
