@@ -33,7 +33,8 @@ sudo zypper install --no-confirm helix # code editor
 
 sudo zypper install --no-confirm libgthread-2_0-0 libxcb-xinerama0 libglib-2_0-0 libxcb-cursor0 mozilla-nss libxcb-icccm4 libxcb-keysyms1 xdg-utils
 [ -x /usr/local/bin/uninstall-anki ] && sudo /usr/local/bin/uninstall-anki
-rm -rf $HOME/.local/share/{Anki2,AnkiProgramFiles}
+rm -rf $HOME/.local/share/{Anki,Anki2,AnkiProgramFiles}
+rm -rf $HOME/.cache/{Anki2,AnkiProgramFiles}
 ANKI_SETUP=$(mktemp -d); cd $ANKI_SETUP; trap 'rm -rf $ANKI_SETUP' EXIT
 curl -fsSLo releases.json 'https://api.github.com/repos/ankitects/anki/releases?per_page=100'
 ASSET_URL=$(jq -r '[.[] | select(.draft == false and .prerelease == false) | .assets[]? | select(.name | test("linux.*\\.tar\\.zst$"))] | first.browser_download_url' releases.json)
