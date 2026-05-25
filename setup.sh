@@ -1,8 +1,10 @@
 #!/usr/bin/env sh
 
 sudo zypper refresh
+
 sudo zypper up
 
+sudo zypper install --no-confirm --from Education anki
 sudo zypper install --no-confirm android-tools
 sudo zypper install --no-confirm git
 sudo zypper install --no-confirm NetworkManager
