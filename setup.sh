@@ -31,6 +31,17 @@ sudo zypper install --no-confirm alacritty # terminal
 sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm helix # code editor
 
+sudo zypper install --no-confirm xdg-utils
+[ -x /usr/local/bin/uninstall-anki ] && sudo /usr/local/bin/uninstall-anki
+ANKI_SETUP=$(mktemp -d); cd $ANKI_SETUP; trap 'rm -rf $ANKI_SETUP' EXIT
+curl -fsSLo releases.json 'https://api.github.com/repos/ankitects/anki/releases?per_page=100'
+ASSET_URL=$(jq -r '[.[] | select(.draft == false and .prerelease == false) | .assets[]? | select(.name | test("linux.*\\.tar\\.zst$"))] | first.browser_download_url' releases.json)
+curl -fsSLo anki-launcher.tar.zst $ASSET_URL
+tar xaf anki-launcher.tar.zst
+cd anki-launcher-*
+sudo mv -f uninstall.sh /usr/local/bin/uninstall-anki
+sudo ./install.sh
+
 find $HOME/dotfiles -exec chmod +x {} +
 
 sudo rm -rf /etc/{firefox,greetd}
