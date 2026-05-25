@@ -42,6 +42,21 @@ cd anki-launcher-*
 sudo mv -f uninstall.sh /usr/local/bin/uninstall-anki
 sudo ./install.sh
 
+sudo find /usr/share/applications \
+  -type f -name "*.desktop" \
+  ! -name org.alacritty.Alacritty.desktop \
+  ! -name org.telegram.desktop.desktop \
+  ! -name htop.desktop \
+  ! -name firefox.desktop \
+  ! -name helix.desktop \
+-exec sh -c '
+  if grep -q "^NoDisplay=" "$1"; then
+    sed -i "s/^NoDisplay=.*/NoDisplay=true/" "$1"
+  else
+    echo "NoDisplay=true" >> "$1"
+  fi
+' sh {} \;
+
 find $HOME/dotfiles -exec chmod +x {} +
 
 sudo rm -rf /etc/{firefox,greetd}
