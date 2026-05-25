@@ -32,7 +32,7 @@ sudo zypper install --no-confirm fuzzel # applications runner
 sudo zypper install --no-confirm mako libnotify-tools # notifications manager
 sudo zypper install --no-confirm sway swaybar swaynag swaybg xwayland # window manager
 sudo zypper install --no-confirm greetd tuigreet # session manager
-sudo zypper install --no-confirm alacritty # terminal
+sudo zypper install --no-confirm alacritty foot # terminal
 sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm helix # code editor
 
