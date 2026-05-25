@@ -30,7 +30,7 @@ sudo zypper install --no-confirm ddcutil # monitor manager
 sudo zypper install --no-confirm wireplumber # volume manager
 sudo zypper install --no-confirm fuzzel # applications runner
 sudo zypper install --no-confirm mako libnotify-tools # notifications manager
-sudo zypper install --no-confirm sway swaybar swaynag swaybg xwayland # window manager
+sudo zypper install --no-confirm --no-recommends sway swaybar swaynag swaybg xwayland # window manager
 sudo zypper install --no-confirm greetd tuigreet # session manager
 sudo zypper install --no-confirm foot # terminal
 sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
