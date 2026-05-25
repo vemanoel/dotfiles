@@ -70,8 +70,8 @@ find $HOME/dotfiles -exec chmod +x {} +
 sudo rm -rf /etc/{firefox,greetd}
 sudo ln -sfn $HOME/dotfiles/{firefox,greetd} /etc
 
-rm -rf $HOME/.config/{alacritty,helix,git,sway,fuzzel,mako}
-ln -sfn $HOME/dotfiles/{alacritty,helix,git,sway,fuzzel,mako} $HOME/.config
+rm -rf $HOME/.config/{foot,helix,git,sway,fuzzel,mako}
+ln -sfn $HOME/dotfiles/{foot,helix,git,sway,fuzzel,mako} $HOME/.config
 
 ln -sfn $HOME/dotfiles/shell/.* $HOME
 
