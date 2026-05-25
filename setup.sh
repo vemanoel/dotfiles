@@ -9,32 +9,33 @@ sudo zypper clean --all
 sudo journalctl --rotate
 sudo journalctl --vacuum-time=1s
 
-sudo zypper install --no-confirm android-tools
-sudo zypper install --no-confirm git
+sudo zypper install --no-confirm --no-recommends android-tools
+sudo zypper install --no-confirm --no-recommends git
 sudo zypper install --no-confirm NetworkManager
 sudo zypper install --no-confirm telegram-desktop
 sudo zypper install --no-confirm iosevka-fonts # fonts
 sudo zypper install --no-confirm wget # download files
 sudo zypper install --no-confirm curl # api testing
 sudo zypper install --no-confirm firefox # browser
-sudo zypper install --no-confirm htop # process manager
+sudo zypper install --no-confirm --no-recommends htop # process manager
 sudo zypper install --no-confirm mpv # video player
 sudo zypper install --no-confirm imv # image viewer
-sudo zypper install --no-confirm bc # calculator
-sudo zypper install --no-confirm make just # task runners
-sudo zypper install --no-confirm go gopls # go toolchain
-sudo zypper install --no-confirm gh # github cli
-sudo zypper install --no-confirm glab # gitlab cli
+sudo zypper install --no-confirm --no-recommends bc # calculator
+sudo zypper install --no-confirm --no-recommends make just # task runners
+sudo zypper install --no-confirm --no-recommends go gopls # go toolchain
+sudo zypper install --no-confirm --no-recommends gh # github cli
+sudo zypper install --no-confirm --no-recommends glab # gitlab cli
 sudo zypper install --no-confirm grim slurp # take screenshots
 sudo zypper install --no-confirm ddcutil # monitor manager
 sudo zypper install --no-confirm wireplumber # volume manager
-sudo zypper install --no-confirm fuzzel # applications runner
-sudo zypper install --no-confirm mako libnotify-tools # notifications manager
-sudo zypper addlock patterns-sway-sway; sudo zypper install --no-confirm --no-recommends sway swaybar swaynag swaybg xwayland # window manager
+sudo zypper install --no-confirm --no-recommends fuzzel # applications runner
+sudo zypper install --no-confirm --no-recommends mako libnotify-tools # notifications manager
+sudo zypper addlock patterns-sway-sway
+sudo zypper install --no-confirm sway swaybar swaynag swaybg xwayland # window manager
 sudo zypper install --no-confirm greetd tuigreet # session manager
-sudo zypper install --no-confirm foot # terminal
-sudo zypper install --no-confirm dragon-drop tar zip unzip fdupes # files manager
-sudo zypper install --no-confirm helix # code editor
+sudo zypper install --no-confirm --no-recommends foot # terminal
+sudo zypper install --no-confirm --no-recommends dragon-drop tar zip unzip fdupes # files manager
+sudo zypper install --no-confirm --no-recommends helix # code editor
 
 sudo zypper install --no-confirm libgthread-2_0-0 libxcb-xinerama0 libglib-2_0-0 libxcb-cursor0 mozilla-nss libxcb-icccm4 libxcb-keysyms1 xdg-utils
 [ -x /usr/local/bin/uninstall-anki ] && sudo /usr/local/bin/uninstall-anki
