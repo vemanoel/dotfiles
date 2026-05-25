@@ -11,28 +11,28 @@ sudo journalctl --vacuum-time=1s
 
 sudo zypper install --no-confirm --no-recommends android-tools
 sudo zypper install --no-confirm --no-recommends git
-sudo zypper install --no-confirm NetworkManager
-sudo zypper install --no-confirm telegram-desktop
-sudo zypper install --no-confirm iosevka-fonts # fonts
-sudo zypper install --no-confirm wget # download files
-sudo zypper install --no-confirm curl # api testing
+sudo zypper install --no-confirm --no-recommends NetworkManager
+sudo zypper install --no-confirm --no-recommends telegram-desktop
+sudo zypper install --no-confirm --no-recommends iosevka-fonts # fonts
+sudo zypper install --no-confirm --no-recommends wget # download files
+sudo zypper install --no-confirm --no-recommends curl # api testing
 sudo zypper install --no-confirm firefox # browser
 sudo zypper install --no-confirm --no-recommends htop # process manager
-sudo zypper install --no-confirm mpv # video player
-sudo zypper install --no-confirm imv # image viewer
+sudo zypper install --no-confirm --no-recommends mpv # video player
+sudo zypper install --no-confirm --no-recommends imv # image viewer
 sudo zypper install --no-confirm --no-recommends bc # calculator
 sudo zypper install --no-confirm --no-recommends make just # task runners
 sudo zypper install --no-confirm --no-recommends go gopls # go toolchain
 sudo zypper install --no-confirm --no-recommends gh # github cli
 sudo zypper install --no-confirm --no-recommends glab # gitlab cli
-sudo zypper install --no-confirm grim slurp # take screenshots
-sudo zypper install --no-confirm ddcutil # monitor manager
-sudo zypper install --no-confirm wireplumber # volume manager
+sudo zypper install --no-confirm --no-recommends grim slurp # take screenshots
+sudo zypper install --no-confirm --no-recommends ddcutil # monitor manager
+sudo zypper install --no-confirm --no-recommends wireplumber # volume manager
 sudo zypper install --no-confirm --no-recommends fuzzel # applications runner
 sudo zypper install --no-confirm --no-recommends mako libnotify-tools # notifications manager
-sudo zypper addlock patterns-sway-sway
-sudo zypper install --no-confirm sway swaybar swaynag swaybg xwayland # window manager
-sudo zypper install --no-confirm greetd tuigreet # session manager
+sudo zypper addlock patterns-sway-sway; sudo zypper install --no-confirm sway # window manager
+sudo zypper install --no-confirm --no-recommends swaybar swaynag swaybg xwayland # window manager dependencies
+sudo zypper install --no-confirm --no-recommends greetd tuigreet # session manager
 sudo zypper install --no-confirm --no-recommends foot # terminal
 sudo zypper install --no-confirm --no-recommends dragon-drop tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm --no-recommends helix # code editor
