@@ -11,3 +11,6 @@ normal = { family = "Iosevka", style = "Extended" }
 bold = { family = "Iosevka", style = "Extended" } # Bold Extended
 italic = { family = "Iosevka", style = "Extended" } # Extended Italic
 bold_italic = { family = "Iosevka", style = "Extended" } # Bold Extended Italic
+
+[env]
+WINIT_UNIX_BACKEND = "wayland"
