@@ -1,8 +1,13 @@
 #!/usr/bin/env sh
 
 sudo zypper refresh
-
 sudo zypper up
+
+rm -rf $HOME/.cache
+sudo zypper purge-kernels
+sudo zypper clean --all
+sudo journalctl --rotate
+sudo journalctl --vacuum-time=1s
 
 sudo zypper install --no-confirm android-tools
 sudo zypper install --no-confirm git
@@ -71,11 +76,5 @@ ln -sfn $HOME/dotfiles/shell/.* $HOME
 
 sudo systemctl set-default graphical.target
 sudo systemctl enable greetd.service
-
-rm -rf $HOME/.cache
-sudo zypper purge-kernels
-sudo zypper clean --all
-sudo journalctl --rotate
-sudo journalctl --vacuum-time=1s
 
 sudo reboot
