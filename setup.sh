@@ -51,7 +51,7 @@ sudo ./install.sh
 
 sudo find /usr/share/applications \
   -type f -name "*.desktop" \
-  ! -name org.alacritty.Alacritty.desktop \
+  ! -name foot.desktop \
   ! -name org.telegram.desktop.desktop \
   ! -name htop.desktop \
   ! -name firefox.desktop \
