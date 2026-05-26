@@ -27,10 +27,10 @@ sudo zypper install --no-confirm --no-recommends mako libnotify-tools # notifica
 sudo zypper install --no-confirm --no-recommends sway swaybar swaynag swaybg xwayland # window manager
 sudo zypper install --no-confirm --no-recommends greetd tuigreet # session manager
 sudo zypper install --no-confirm --no-recommends foot # terminal
-sudo zypper install --no-confirm --no-recommends dragon-drop tar zip unzip fdupes # files manager
+sudo zypper install --no-confirm --no-recommends dragon-drop zstd tar zip unzip fdupes # files manager
 sudo zypper install --no-confirm --no-recommends helix # code editor
 
-sudo zypper install --no-confirm --no-recommends libXtst6 zstd libgthread-2_0-0 libxcb-xinerama0 libglib-2_0-0 libxcb-cursor0 mozilla-nss libxcb-icccm4 libxcb-keysyms1 xdg-utils
+sudo zypper install --no-confirm --no-recommends libXtst6 libgthread-2_0-0 libxcb-xinerama0 libglib-2_0-0 libxcb-cursor0 mozilla-nss libxcb-icccm4 libxcb-keysyms1 xdg-utils
 [ -x /usr/local/bin/uninstall-anki ] && sudo /usr/local/bin/uninstall-anki
 rm -rf $HOME/.local/share/{Anki,Anki2,AnkiProgramFiles}
 rm -rf $HOME/.cache/{Anki2,AnkiProgramFiles}
