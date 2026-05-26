@@ -21,6 +21,7 @@ sudo zypper install --no-confirm --no-recommends gh # github cli
 sudo zypper install --no-confirm --no-recommends glab # gitlab cli
 sudo zypper install --no-confirm --no-recommends grim slurp # take screenshots
 sudo zypper install --no-confirm --no-recommends ddcutil # monitor manager
+sudo zypper install --no-confirm --no-recommends wl-clipboard # copy/paste
 sudo zypper install --no-confirm wireplumber # volume manager
 sudo zypper install --no-confirm --no-recommends fuzzel # applications runner
 sudo zypper install --no-confirm --no-recommends mako libnotify-tools # notifications manager
