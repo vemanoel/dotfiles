@@ -24,7 +24,7 @@ sudo zypper install --no-confirm --no-recommends ddcutil # monitor manager
 sudo zypper install --no-confirm wireplumber # volume manager
 sudo zypper install --no-confirm --no-recommends fuzzel # applications runner
 sudo zypper install --no-confirm --no-recommends mako libnotify-tools # notifications manager
-sudo zypper addlock patterns-sway-sway; sudo zypper install --no-confirm sway # window manager
+sudo zypper install --no-confirm --no-recommends sway # window manager
 sudo zypper install --no-confirm --no-recommends swaybar swaynag swaybg xwayland # window manager dependencies
 sudo zypper install --no-confirm --no-recommends greetd tuigreet # session manager
 sudo zypper install --no-confirm --no-recommends foot # terminal
