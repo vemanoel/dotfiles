@@ -10,10 +10,10 @@ case $1 in
         wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
         ;;
 esac
-out=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
-if echo $out | grep -q MUTED; then
+VOLUME=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
+if echo $VOLUME | grep -q MUTED; then
     msg="MUTED"
 else
-    msg="$(echo $out | awk '{print int($2*100)}')%"
+    msg="$(echo $VOLUME | awk '{print int($2*100)}')%"
 fi
 notify-send -t 1300 -h string:x-canonical-private-synchronous:volume "Volume" $msg
