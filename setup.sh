@@ -25,7 +25,8 @@ sudo zypper install --no-confirm --no-recommends wl-clipboard # copy/paste
 sudo zypper install --no-confirm wireplumber # volume manager
 sudo zypper install --no-confirm --no-recommends fuzzel # applications runner
 sudo zypper install --no-confirm --no-recommends mako libnotify-tools # notifications manager
-sudo zypper install --no-confirm --no-recommends sway swaybar swaynag swaybg xwayland xdg-desktop-portal-gtk xdg-desktop-portal-wlr # window manager
+sudo zypper install --no-confirm --no-recommends sway swaybar swaynag swaybg xwayland # window manager
+sudo zypper install --no-confirm --no-recommends xdg-desktop-portal-gtk xdg-desktop-portal-wlr # screen sharing
 sudo zypper install --no-confirm --no-recommends greetd tuigreet # session manager
 sudo zypper install --no-confirm --no-recommends foot # terminal
 sudo zypper install --no-confirm --no-recommends dragon-drop zstd tar zip unzip fdupes # files manager
