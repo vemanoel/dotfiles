@@ -7,7 +7,7 @@ sudo zypper install --no-confirm --no-recommends android-tools
 sudo zypper install --no-confirm --no-recommends git
 sudo zypper install --no-confirm --no-recommends NetworkManager
 sudo zypper install --no-confirm --no-recommends telegram-desktop
-sudo zypper install --no-confirm --no-recommends iosevka-fonts # fonts
+sudo zypper install --no-confirm --no-recommends dejavu-fonts liberation-fonts iosevka-fonts # fonts
 sudo zypper install --no-confirm --no-recommends wget # download files
 sudo zypper install --no-confirm --no-recommends curl # api testing
 sudo zypper install --no-confirm firefox # browser
