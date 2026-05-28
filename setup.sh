@@ -7,10 +7,6 @@ sudo zypper addrepo https://brave-browser-rpm-nightly.s3.brave.com/brave-browser
 sudo zypper --gpg-auto-import-keys refresh
 sudo zypper install --no-confirm --no-recommends brave-origin-nightly
 
-sudo mkdir -p /etc
-sudo rm -rf /etc/{firefox,brave}
-sudo ln -sf $HOME/dotfiles/{firefox,brave} /etc/{firefox,brave}
-
 sudo zypper install --no-confirm --no-recommends android-tools
 sudo zypper install --no-confirm --no-recommends git
 sudo zypper install --no-confirm --no-recommends NetworkManager
@@ -66,8 +62,9 @@ sudo find /usr/share/applications \
 
 find $HOME/dotfiles -exec chmod +x {} +
 
-sudo rm -rf /etc/{firefox,greetd}
-sudo ln -sfn $HOME/dotfiles/{firefox,greetd} /etc
+sudo mkdir -p /etc
+sudo rm -rf /etc/{firefox,brave,greetd}
+sudo ln -sf $HOME/dotfiles/{firefox,brave,greetd} /etc
 
 rm -rf $HOME/.config/{foot,helix,git,sway,fuzzel,mako}
 ln -sfn $HOME/dotfiles/{foot,helix,git,sway,fuzzel,mako} $HOME/.config
