@@ -7,6 +7,10 @@ sudo zypper addrepo https://brave-browser-rpm-nightly.s3.brave.com/brave-browser
 sudo zypper --gpg-auto-import-keys refresh
 sudo zypper install --no-confirm --no-recommends brave-origin-nightly
 
+sudo mkdir -p /etc
+sudo rm -rf /etc/brave
+sudo ln -sf $HOME/dotfiles/brave /etc/brave
+
 sudo zypper install --no-confirm --no-recommends android-tools
 sudo zypper install --no-confirm --no-recommends git
 sudo zypper install --no-confirm --no-recommends NetworkManager
