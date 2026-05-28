@@ -8,6 +8,11 @@
   "ExtensionInstallForcelist": [
     "mnjggcdmjocbbbhaepdhchncahnbgone"
   ],
+  "BackgroundModeEnabled": false,
+  "HardwareAccelerationModeEnabled": true,
+  "MemorySaverModeSavings": 2,
+  "SearchSuggestEnabled": false,
+  "HighEfficiencyModeEnabled": true,
   "DefaultSearchProviderEnabled": true,
   "DefaultSearchProviderName": "Google",
   "DefaultSearchProviderKeyword": "google.com",
