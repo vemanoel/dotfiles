@@ -3,34 +3,34 @@
 sudo zypper refresh
 sudo zypper up
 
+sudo zypper addrepo https://brave-browser-rpm-nightly.s3.brave.com/brave-browser-nightly.repo
+sudo zypper --gpg-auto-import-keys refresh
+sudo zypper install --no-confirm --no-recommends brave-origin-nightly
+
 sudo zypper install --no-confirm --no-recommends android-tools
 sudo zypper install --no-confirm --no-recommends git
 sudo zypper install --no-confirm --no-recommends NetworkManager
 sudo zypper install --no-confirm --no-recommends telegram-desktop
-sudo zypper install --no-confirm --no-recommends dejavu-fonts liberation-fonts iosevka-fonts # fonts
-sudo zypper install --no-confirm --no-recommends wget # download files
-sudo zypper install --no-confirm --no-recommends curl # api testing
-sudo zypper install --no-confirm firefox # browser
-sudo zypper install --no-confirm --no-recommends htop # process manager
-sudo zypper install --no-confirm --no-recommends mpv # video player
-sudo zypper install --no-confirm --no-recommends imv # image viewer
-sudo zypper install --no-confirm --no-recommends bc # calculator
-sudo zypper install --no-confirm --no-recommends make just # task runners
-sudo zypper install --no-confirm --no-recommends go gopls # go toolchain
-sudo zypper install --no-confirm --no-recommends gh # github cli
-sudo zypper install --no-confirm --no-recommends glab # gitlab cli
-sudo zypper install --no-confirm --no-recommends grim slurp # take screenshots
-sudo zypper install --no-confirm --no-recommends ddcutil # monitor manager
-sudo zypper install --no-confirm --no-recommends wl-clipboard # copy/paste
-sudo zypper install --no-confirm wireplumber # volume manager
-sudo zypper install --no-confirm --no-recommends fuzzel # applications runner
-sudo zypper install --no-confirm --no-recommends mako libnotify-tools # notifications manager
-sudo zypper install --no-confirm --no-recommends sway swaybar swaynag swaybg xwayland # window manager
-sudo zypper install --no-confirm --no-recommends xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr # screen sharing
-sudo zypper install --no-confirm --no-recommends greetd tuigreet # session manager
-sudo zypper install --no-confirm --no-recommends foot # terminal
-sudo zypper install --no-confirm --no-recommends dragon-drop zstd tar zip unzip fdupes # files manager
-sudo zypper install --no-confirm --no-recommends helix # code editor
+sudo zypper install --no-confirm --no-recommends dejavu-fonts liberation-fonts iosevka-fonts
+sudo zypper install --no-confirm --no-recommends curl wget
+sudo zypper install --no-confirm --no-recommends htop
+sudo zypper install --no-confirm --no-recommends mpv imv
+sudo zypper install --no-confirm --no-recommends bc
+sudo zypper install --no-confirm --no-recommends make just
+sudo zypper install --no-confirm --no-recommends go gopls
+sudo zypper install --no-confirm --no-recommends gh glab
+sudo zypper install --no-confirm --no-recommends grim slurp
+sudo zypper install --no-confirm --no-recommends ddcutil
+sudo zypper install --no-confirm --no-recommends wl-clipboard
+sudo zypper install --no-confirm wireplumber
+sudo zypper install --no-confirm --no-recommends fuzzel
+sudo zypper install --no-confirm --no-recommends mako libnotify-tools
+sudo zypper install --no-confirm --no-recommends sway swaybar swaynag swaybg xwayland
+sudo zypper install --no-confirm --no-recommends xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
+sudo zypper install --no-confirm --no-recommends greetd tuigreet
+sudo zypper install --no-confirm --no-recommends foot
+sudo zypper install --no-confirm --no-recommends dragon-drop zstd tar zip unzip fdupes
+sudo zypper install --no-confirm --no-recommends helix
 
 sudo zypper install --no-confirm --no-recommends libXtst6 libgthread-2_0-0 libxcb-xinerama0 libglib-2_0-0 libxcb-cursor0 mozilla-nss libxcb-icccm4 libxcb-keysyms1 xdg-utils
 [ -x /usr/local/bin/uninstall-anki ] && sudo /usr/local/bin/uninstall-anki
