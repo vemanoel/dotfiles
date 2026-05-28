@@ -51,6 +51,7 @@ sudo find /usr/share/applications \
   ! -name org.telegram.desktop.desktop \
   ! -name htop.desktop \
   ! -name firefox.desktop \
+  ! -name brave-origin-nightly.desktop \
   ! -name helix.desktop \
 -exec sh -c '
   if grep -q "^NoDisplay=" "$1"; then
