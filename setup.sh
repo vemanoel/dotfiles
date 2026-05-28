@@ -8,8 +8,8 @@ sudo zypper --gpg-auto-import-keys refresh
 sudo zypper install --no-confirm --no-recommends brave-origin-nightly
 
 sudo mkdir -p /etc
-sudo rm -rf /etc/brave
-sudo ln -sf $HOME/dotfiles/brave /etc/brave
+sudo rm -rf /etc/{firefox,brave}
+sudo ln -sf $HOME/dotfiles/{firefox,brave} /etc/{firefox,brave}
 
 sudo zypper install --no-confirm --no-recommends android-tools
 sudo zypper install --no-confirm --no-recommends git
