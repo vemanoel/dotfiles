@@ -67,7 +67,7 @@ sudo rm -rf /etc/{firefox,brave,greetd}
 sudo ln -sf $HOME/dotfiles/{firefox,brave,greetd} /etc
 
 rm -rf $HOME/.config/{foot,helix,git,sway,fuzzel,mako}
-ln -sfn $HOME/dotfiles/{foot,helix,git,sway,fuzzel,mako} $HOME/.config
+ln -sfn $HOME/dotfiles/{foot,helix,git,sway,fuzzel,mako,yazi} $HOME/.config
 
 ln -sfn $HOME/dotfiles/shell/.* $HOME
 
