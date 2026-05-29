@@ -1,0 +1,50 @@
+[mgr]
+ratio = [1, 6, 0]
+show_hidden = true
+show_symlink = true
+
+[[mgr.prepend_keymap]]
+on  = "<C-n>"
+run = "shell -- dragon-drop -x -i -T %h"
+
+[opener]
+play = [{ run = "mpv %s", orphan = true, for = "linux" }]
+view = [{ run = "imv %s", orphan = true, for = "linux" }]
+open = [{ run = "hx %s1", block = true, for = "linux" }]
+edit = [{ run = "hx %s", block = true, for = "linux" }]
+
+[open]
+rules = [
+  { mime = "*/", use = "open" },
+
+  { url = "*.ini", use = "edit" },
+  { url = "*.bash", use = "edit" },
+  { url = "*.sh", use = "edit" },
+  { url = "*.zsh", use = "edit" },
+  { url = "*.json", use = "edit" },
+  { url = "*.c", use = "edit" },
+  { url = "*.cpp", use = "edit" },
+  { url = "*.cs", use = "edit" },
+	{ url = "*.md", use = "edit" },
+	{ url = "*.txt", use = "edit" },
+	{ url = "*.js", use = "edit" },
+	{ url = "*.ts", use = "edit" },
+	{ url = "*.go", use = "edit" },
+	{ url = "*.java", use = "edit" },
+	{ url = "*.rs", use = "edit" },
+  { url = "*.asm", use = "edit" },
+	{ url = "*.py", use = "edit" },
+	{ url = "*.lua", use = "edit" },
+	{ url = "*.toml", use = "edit" },
+  { url = "*.xml", use = "edit" },
+	{ url = "*.yaml", use = "edit" },
+	{ url = "*.yml", use = "edit" },
+	{ url = "*.html", use = "edit" },
+	{ url = "*.css", use = "edit" },
+  { url = "*.scss", use = "edit" },
+  { url = "*.sass", use = "edit" },
+  { url = "*.less", use = "edit" },
+
+	{ mime = "image/*", use = "view" },
+	{ mime = "video/*", use = "play" }
+]
