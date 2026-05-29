@@ -3,10 +3,6 @@ ratio = [1, 6, 0]
 show_hidden = true
 show_symlink = true
 
-[[mgr.prepend_keymap]]
-on  = "<C-n>"
-run = "shell -- dragon-drop -x -i -T %h"
-
 [opener]
 play = [{ run = "mpv %s", orphan = true, for = "linux" }]
 view = [{ run = "imv %s", orphan = true, for = "linux" }]
