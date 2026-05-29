@@ -12,7 +12,7 @@ sudo zypper install --no-confirm --no-recommends git
 sudo zypper install --no-confirm --no-recommends NetworkManager
 sudo zypper install --no-confirm --no-recommends telegram-desktop
 sudo zypper install --no-confirm --no-recommends dejavu-fonts liberation-fonts iosevka-fonts
-sudo zypper install --no-confirm --no-recommends yazi dragon-drop file ffmpeg p7zip jq poppler-tools fd ripgrep fzf zoxide resvg ImageMagick wl-clipboard
+sudo zypper install --no-confirm --no-recommends yazi dragon-drop file p7zip wl-clipboard
 sudo zypper install --no-confirm --no-recommends curl wget
 sudo zypper install --no-confirm --no-recommends htop
 sudo zypper install --no-confirm --no-recommends mpv imv
