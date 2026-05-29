@@ -1,5 +1,5 @@
 {
-  "DownloadDirectory": "/home/${user_name}/Downloads/firefox",
+  "DownloadDirectory": "/home/${user_name}/Downloads/brave",
   "PromptForDownloadLocation": false,
   "ExtensionInstallBlocklist": ["*"],
   "ExtensionInstallAllowlist": [
