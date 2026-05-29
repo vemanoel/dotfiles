@@ -25,8 +25,7 @@ sudo zypper install --no-confirm --no-recommends ddcutil
 sudo zypper install --no-confirm wireplumber
 sudo zypper install --no-confirm --no-recommends fuzzel
 sudo zypper install --no-confirm --no-recommends mako libnotify-tools
-sudo zypper install --no-confirm --no-recommends sway swaybar swaynag swaybg xwayland
-sudo zypper install --no-confirm --no-recommends xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
+sudo zypper install --no-confirm --no-recommends sway swaybar swaynag swaybg xwayland xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
 sudo zypper install --no-confirm --no-recommends greetd tuigreet
 sudo zypper install --no-confirm --no-recommends foot
 sudo zypper install --no-confirm --no-recommends zstd tar zip unzip fdupes
