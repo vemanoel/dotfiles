@@ -12,6 +12,7 @@ sudo zypper install --no-confirm --no-recommends git
 sudo zypper install --no-confirm --no-recommends NetworkManager
 sudo zypper install --no-confirm --no-recommends telegram-desktop
 sudo zypper install --no-confirm --no-recommends dejavu-fonts liberation-fonts iosevka-fonts
+sudo zypper install --no-confirm --no-recommends yazi dragon-drop file ffmpeg p7zip jq poppler-tools fd ripgrep fzf zoxide resvg ImageMagick wl-clipboard
 sudo zypper install --no-confirm --no-recommends curl wget
 sudo zypper install --no-confirm --no-recommends htop
 sudo zypper install --no-confirm --no-recommends mpv imv
@@ -21,7 +22,6 @@ sudo zypper install --no-confirm --no-recommends go gopls
 sudo zypper install --no-confirm --no-recommends gh glab
 sudo zypper install --no-confirm --no-recommends grim slurp
 sudo zypper install --no-confirm --no-recommends ddcutil
-sudo zypper install --no-confirm --no-recommends wl-clipboard
 sudo zypper install --no-confirm wireplumber
 sudo zypper install --no-confirm --no-recommends fuzzel
 sudo zypper install --no-confirm --no-recommends mako libnotify-tools
@@ -29,7 +29,7 @@ sudo zypper install --no-confirm --no-recommends sway swaybar swaynag swaybg xwa
 sudo zypper install --no-confirm --no-recommends xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
 sudo zypper install --no-confirm --no-recommends greetd tuigreet
 sudo zypper install --no-confirm --no-recommends foot
-sudo zypper install --no-confirm --no-recommends dragon-drop zstd tar zip unzip fdupes
+sudo zypper install --no-confirm --no-recommends zstd tar zip unzip fdupes
 sudo zypper install --no-confirm --no-recommends helix
 
 sudo zypper install --no-confirm --no-recommends libXtst6 libgthread-2_0-0 libxcb-xinerama0 libglib-2_0-0 libxcb-cursor0 mozilla-nss libxcb-icccm4 libxcb-keysyms1 xdg-utils
