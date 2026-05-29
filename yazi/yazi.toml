@@ -11,16 +11,16 @@ edit = [{ run = "hx %s", block = true, for = "linux" }]
 
 [open]
 rules = [
-  { mime = "*/", use = "open" },
-
-  { url = "*.ini", use = "edit" },
-  { url = "*.bash", use = "edit" },
-  { url = "*.sh", use = "edit" },
-  { url = "*.zsh", use = "edit" },
-  { url = "*.json", use = "edit" },
-  { url = "*.c", use = "edit" },
-  { url = "*.cpp", use = "edit" },
-  { url = "*.cs", use = "edit" },
+	{ mime = "*/", use = "open" },
+	
+	{ url = "*.ini", use = "edit" },
+	{ url = "*.bash", use = "edit" },
+	{ url = "*.sh", use = "edit" },
+	{ url = "*.zsh", use = "edit" },
+	{ url = "*.json", use = "edit" },
+	{ url = "*.c", use = "edit" },
+	{ url = "*.cpp", use = "edit" },
+	{ url = "*.cs", use = "edit" },
 	{ url = "*.md", use = "edit" },
 	{ url = "*.txt", use = "edit" },
 	{ url = "*.js", use = "edit" },
@@ -28,19 +28,19 @@ rules = [
 	{ url = "*.go", use = "edit" },
 	{ url = "*.java", use = "edit" },
 	{ url = "*.rs", use = "edit" },
-  { url = "*.asm", use = "edit" },
+	{ url = "*.asm", use = "edit" },
 	{ url = "*.py", use = "edit" },
 	{ url = "*.lua", use = "edit" },
 	{ url = "*.toml", use = "edit" },
-  { url = "*.xml", use = "edit" },
+	{ url = "*.xml", use = "edit" },
 	{ url = "*.yaml", use = "edit" },
 	{ url = "*.yml", use = "edit" },
 	{ url = "*.html", use = "edit" },
 	{ url = "*.css", use = "edit" },
-  { url = "*.scss", use = "edit" },
-  { url = "*.sass", use = "edit" },
-  { url = "*.less", use = "edit" },
-
+	{ url = "*.scss", use = "edit" },
+	{ url = "*.sass", use = "edit" },
+	{ url = "*.less", use = "edit" },
+	
 	{ mime = "image/*", use = "view" },
 	{ mime = "video/*", use = "play" }
 ]
